@@ -20,7 +20,7 @@ camera.position.setX( 10 );
 renderer.render( scene, camera );
 
 //TORUS
-const torusText = new THREE.TextureLoader().load('torus-text.jpg');
+const torusText = new THREE.TextureLoader().load('./torus-text.jpg');
 
 const geometry = new THREE.TorusGeometry( 3, 0.8, 16, 100 );
 const material = new THREE.MeshBasicMaterial( {map: torusText} );
@@ -60,7 +60,7 @@ function addStar() {
 Array(200).fill().forEach(addStar)
 
 //BG
-const spaceTexture = new THREE.TextureLoader().load('space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('./space.jpg');
 scene.background = spaceTexture;
 
 
@@ -100,7 +100,7 @@ function animate(){
 };
 
 //CUBE
-const cat1 = new THREE.TextureLoader().load('space-cat.jpg');
+const cat1 = new THREE.TextureLoader().load('./space-cat.jpg');
 
 const cat = new THREE.Mesh(
   new THREE.BoxGeometry(2, 2, 2),
@@ -113,7 +113,7 @@ scene.add(cat);
 
 
 //CUBE 2
-const cat2 = new THREE.TextureLoader().load('cat.jpg');
+const cat2 = new THREE.TextureLoader().load('./cat.jpg');
 
 const spaceCat = new THREE.Mesh(
   new THREE.BoxGeometry(0.1, 6.4, 4),
@@ -130,7 +130,7 @@ scene.add(spaceCat);
 
 
 //CUBE 3
-const cat3 = new THREE.TextureLoader().load('cat-venus.jpg');
+const cat3 = new THREE.TextureLoader().load('./cat-venus.jpg');
 
 const spaceCatVenus = new THREE.Mesh(
   new THREE.BoxGeometry(0.1, 6.4, 4),
@@ -146,7 +146,7 @@ scene.add(spaceCatVenus);
 
 
 //CUBE 4
-const cat4 = new THREE.TextureLoader().load('kittens.jpg');
+const cat4 = new THREE.TextureLoader().load('./kittens.jpg');
 
 const spaceKitten = new THREE.Mesh(
   new THREE.BoxGeometry(0.1, 6.4, 4),
@@ -165,8 +165,8 @@ scene.add(spaceKitten);
 
 
 //MARS
-const marsText = new THREE.TextureLoader().load('mars.jpg');
-const marsNormal = new THREE.TextureLoader().load('mars-normal.jpg');
+const marsText = new THREE.TextureLoader().load('./mars.jpg');
+const marsNormal = new THREE.TextureLoader().load('./mars-normal.jpg');
 
 const mars = new THREE.Mesh(
   new THREE.SphereGeometry(2.5, 32, 32),
