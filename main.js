@@ -20,7 +20,7 @@ camera.position.setX( 10 );
 renderer.render( scene, camera );
 
 //TORUS
-const torusText = new THREE.TextureLoader().load('https://imgur.com/a/QSXpRvg');
+const torusText = new THREE.TextureLoader().load('https://i.imgur.com/WuKVGVl.jpeg');
 
 const geometry = new THREE.TorusGeometry( 3, 0.8, 16, 100 );
 const material = new THREE.MeshBasicMaterial( {map: torusText} );
@@ -60,7 +60,7 @@ function addStar() {
 Array(200).fill().forEach(addStar)
 
 //BG
-const spaceTexture = new THREE.TextureLoader().load('https://imgur.com/a/aQlpjQO');
+const spaceTexture = new THREE.TextureLoader().load('https://i.imgur.com/mynnHcn.jpeg');
 scene.background = spaceTexture;
 
 
@@ -100,7 +100,7 @@ function animate(){
 };
 
 //CUBE
-const cat1 = new THREE.TextureLoader().load('https://imgur.com/a/ihpqClN');
+const cat1 = new THREE.TextureLoader().load('https://i.imgur.com/kgpAMl3.jpeg');
 
 const cat = new THREE.Mesh(
   new THREE.BoxGeometry(2, 2, 2),
@@ -113,7 +113,7 @@ scene.add(cat);
 
 
 //CUBE 2
-const cat2 = new THREE.TextureLoader().load('https://imgur.com/a/9bESxtA');
+const cat2 = new THREE.TextureLoader().load('https://i.imgur.com/0xj9sbd.jpeg');
 
 const spaceCat = new THREE.Mesh(
   new THREE.BoxGeometry(0.1, 6.4, 4),
@@ -130,7 +130,7 @@ scene.add(spaceCat);
 
 
 //CUBE 3
-const cat3 = new THREE.TextureLoader().load('https://imgur.com/a/b4igGcy');
+const cat3 = new THREE.TextureLoader().load('https://i.imgur.com/DwR0IXO.jpeg');
 
 const spaceCatVenus = new THREE.Mesh(
   new THREE.BoxGeometry(0.1, 6.4, 4),
@@ -146,7 +146,7 @@ scene.add(spaceCatVenus);
 
 
 //CUBE 4
-const cat4 = new THREE.TextureLoader().load('https://imgur.com/a/KAB7Mjy');
+const cat4 = new THREE.TextureLoader().load('https://i.imgur.com/i2XHGGF.jpeg');
 
 const spaceKitten = new THREE.Mesh(
   new THREE.BoxGeometry(0.1, 6.4, 4),
@@ -165,8 +165,8 @@ scene.add(spaceKitten);
 
 
 //MARS
-const marsText = new THREE.TextureLoader().load('https://imgur.com/a/Euuds24');
-const marsNormal = new THREE.TextureLoader().load('https://imgur.com/a/70qJC0z');
+const marsText = new THREE.TextureLoader().load('https://i.imgur.com/gWOzCCQ.jpeg');
+const marsNormal = new THREE.TextureLoader().load('https://i.imgur.com/pMp4jrN.jpeg');
 
 const mars = new THREE.Mesh(
   new THREE.SphereGeometry(2.5, 32, 32),
