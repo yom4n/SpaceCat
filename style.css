@@ -16,6 +16,23 @@ canvas {
   font-style: normal;
 }
 
+body {
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 0.15rem;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: black;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #8a398a;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 0px solid orange;  /* creates padding around scroll thumb */
+}
+
 
 main {
   width: 100vw;
@@ -27,6 +44,10 @@ main {
   
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+}
+
+audio {
+  display: none;
 }
 
 h1, h2, h3, blockquote {
